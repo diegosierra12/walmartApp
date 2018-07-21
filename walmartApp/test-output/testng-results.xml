@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1837" started-at="2018-07-21T22:27:12Z" finished-at="2018-07-21T22:27:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1837" started-at="2018-07-21T22:27:12Z" finished-at="2018-07-21T22:27:14Z">
+      <class name="test.Waltmart_IT">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="beforeSuite" is-config="true" duration-ms="1223" started-at="2018-07-21T17:27:11Z" finished-at="2018-07-21T17:27:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2424686b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="1" started-at="2018-07-21T17:27:12Z" finished-at="2018-07-21T17:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1" started-at="2018-07-21T17:27:12Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2018-07-21T17:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2018-07-21T17:27:12Z" finished-at="2018-07-21T17:27:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.Waltmart_IT.testNumItems()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testNumItems()[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="testNumItems" duration-ms="1815" started-at="2018-07-21T17:27:12Z" finished-at="2018-07-21T17:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNumItems -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2018-07-21T17:27:14Z" finished-at="2018-07-21T17:27:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.Waltmart_IT.testNumItems()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2018-07-21T17:27:14Z" finished-at="2018-07-21T17:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:test.Waltmart_IT@2d9d4f9d]" name="afterSuite" is-config="true" duration-ms="29" started-at="2018-07-21T17:27:14Z" finished-at="2018-07-21T17:27:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2424686b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.Waltmart_IT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,147 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Waltmart Test 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ waltmart ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ waltmart ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ waltmart ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ waltmart ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to D:\CEAARIAS\projects\citrus\walmartApp\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ waltmart ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ waltmart ---
+[INFO] Building jar: D:\CEAARIAS\projects\citrus\walmartApp\target\waltmart-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.20.1:integration-test (integration-tests) @ waltmart ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running test.Waltmart_IT
+12:51:41,183 INFO  tContextBootstrapper| Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@799d4f69, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49c43f4e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@290dbf45, org.springframework.test.context.support.DirtiesContextTestExecutionListener@12028586]
+12:51:41,261 INFO  icApplicationContext| Refreshing org.springframework.context.support.GenericApplicationContext@12d3a4e9: startup date [Sat Jul 21 12:51:41 COT 2018]; root of context hierarchy
+12:51:41,355 INFO  BeanDefinitionReader| Loading XML bean definitions from URL [file:/D:/CEAARIAS/projects/citrus/walmartApp/target/test-classes/citrus-context.xml]
+12:51:41,543 DEBUG BeanDefinitionReader| Loaded 0 bean definitions from location pattern [classpath*:citrus-context.xml]
+12:51:42,043 INFO  port.LoggingReporter| 
+12:51:42,043 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:42,043 INFO  port.LoggingReporter|        .__  __                       
+12:51:42,043 INFO  port.LoggingReporter|   ____ |__|/  |________ __ __  ______
+12:51:42,043 INFO  port.LoggingReporter| _/ ___\|  \   __\_  __ \  |  \/  ___/
+12:51:42,043 INFO  port.LoggingReporter| \  \___|  ||  |  |  | \/  |  /\___ \ 
+12:51:42,043 INFO  port.LoggingReporter|  \___  >__||__|  |__|  |____//____  >
+12:51:42,043 INFO  port.LoggingReporter|      \/                           \/
+12:51:42,043 INFO  port.LoggingReporter| 
+12:51:42,043 INFO  port.LoggingReporter| C I T R U S  T E S T S  2.7.6
+12:51:42,043 INFO  port.LoggingReporter| 
+12:51:42,043 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:42,043 DEBUG port.LoggingReporter| BEFORE TEST SUITE
+12:51:42,043 INFO  port.LoggingReporter| 
+12:51:42,043 INFO  port.LoggingReporter| 
+12:51:42,043 INFO  port.LoggingReporter| BEFORE TEST SUITE: SUCCESS
+12:51:42,043 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:42,043 INFO  port.LoggingReporter| 
+12:51:42,058 DEBUG t.TestContextFactory| Created new test context - using global variables: '{}'
+12:51:42,105 INFO  port.LoggingReporter| 
+12:51:42,105 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:42,105 DEBUG port.LoggingReporter| STARTING TEST Waltmart_IT.testWaltmartJson <test>
+12:51:42,105 INFO  port.LoggingReporter| 
+12:51:42,105 DEBUG      citrus.TestCase| Initializing test case
+12:51:42,105 DEBUG  context.TestContext| Setting variable: citrus.test.name with value: 'Waltmart_IT.testWaltmartJson'
+12:51:42,105 DEBUG  context.TestContext| Setting variable: citrus.test.package with value: 'test'
+12:51:42,105 DEBUG      citrus.TestCase| Test variables:
+12:51:42,105 DEBUG      citrus.TestCase| citrus.test.name = Waltmart_IT.testWaltmartJson
+12:51:42,105 DEBUG      citrus.TestCase| citrus.test.package = test
+12:51:42,121 INFO  port.LoggingReporter| 
+12:51:42,121 DEBUG port.LoggingReporter| TEST STEP 1/2: send
+12:51:42,136 DEBUG faultEndpointFactory| Found cached endpoint for uri 'http://api.walmartlabs.com'
+12:51:42,558 DEBUG ltCorrelationManager| Saving correlation key for 'citrus_message_correlator_HttpClient'
+12:51:42,558 DEBUG  context.TestContext| Setting variable: citrus_message_correlator_HttpClient with value: 'citrus_message_id = '027c402b-fdca-480f-816c-5a2d613ba3ad''
+12:51:42,558 DEBUG    client.HttpClient| Sending HTTP message to: 'http://api.walmartlabs.com/v1/search?query=ipod&format=json&apiKey=n7h9s5yzwvapnv87wq73f7gc&responseGroup=base&order=asc&numItems=1&start=3'
+12:51:42,558 DEBUG    client.HttpClient| Message to send:
+
+12:51:42,574 DEBUG ingClientInterceptor| Sending Http request message
+12:51:43,871 DEBUG ingClientInterceptor| Received Http response message
+12:51:43,871 INFO     client.HttpClient| HTTP message was sent to endpoint: 'http://api.walmartlabs.com/v1/search?query=ipod&format=json&apiKey=n7h9s5yzwvapnv87wq73f7gc&responseGroup=base&order=asc&numItems=1&start=3'
+12:51:43,871 DEBUG ltCorrelationManager| Saving correlated object for 'citrus_message_id = '027c402b-fdca-480f-816c-5a2d613ba3ad''
+12:51:43,871 INFO  port.LoggingReporter| 
+12:51:43,871 DEBUG port.LoggingReporter| TEST STEP 1/2 SUCCESS
+12:51:43,871 DEBUG faultEndpointFactory| Found cached endpoint for uri 'http://api.walmartlabs.com'
+12:51:43,871 INFO  port.LoggingReporter| 
+12:51:43,871 DEBUG port.LoggingReporter| TEST STEP 2/2: receive
+12:51:43,871 DEBUG faultEndpointFactory| Found cached endpoint for uri 'http://api.walmartlabs.com'
+12:51:43,871 DEBUG ngCorrelationManager| Get correlation key for 'citrus_message_correlator_HttpClient'
+12:51:43,871 DEBUG ltCorrelationManager| Finding correlated object for 'citrus_message_id = '027c402b-fdca-480f-816c-5a2d613ba3ad''
+12:51:43,871 DEBUG athVariableExtractor| Reading JSON elements with JSONPath
+12:51:43,902 DEBUG athVariableExtractor| Evaluating JSONPath expression: $.items[0].name
+12:51:43,918 DEBUG  context.TestContext| Setting variable: Name with value: 'Apple iPod Touch 6th Generation 32GB Refurbished'
+12:51:43,918 DEBUG faultEndpointFactory| Found cached endpoint for uri 'http://api.walmartlabs.com'
+12:51:43,918 DEBUG ageValidatorRegistry| Found 4 message validators for message type: JSON
+12:51:43,918 DEBUG TextMessageValidator| Start JSON message validation ...
+12:51:43,918 DEBUG TextMessageValidator| Received message:
+HTTPMESSAGE [id: b81b355d-af51-45b0-a1aa-7683ec70690f, payload: {"query":"ipod","sort":"relevance","responseGroup":"base","totalResults":327,"start":3,"numItems":1,"items":[{"itemId":54203936,"parentItemId":54203936,"name":"Apple iPod Touch 6th Generation 32GB Refurbished","msrp":184.99,"salePrice":154.03,"upc":"190341989178","categoryPath":"Electronics/Portable Audio/Apple iPods/iPod Touch","shortDescription":"&quot;If life were more like the movies, we'd all have our personal soundtrack swelling slowly and dramatically as we make our way through the day. Sadly, most of us don't live in the movies, but that doesn't mean you can't keep your soundtrack close at hand, as long as you don't leave home without your iPod touch! You can take vivid, clear photos and videos with the new 8MP iSight camera, and stay in touch with your besties with the improved FaceTime HD camera, one of the best ways to experience video calls. Stay connected with Messages and the most popular social networking apps. A great device for gameheads, audiophiles, social media mavens and everyone in between. All on a 4-inch Retina display. &quot;","longDescription":"&lt;ul class=&quot;noindent&quot;&gt;&lt;li&gt;4-inch Retina display3&lt;/li&gt;&lt;li&gt;A8 with M8 motion coprocessor&lt;/li&gt;&lt;li&gt;Up to 40 hours audio playback4&lt;/li&gt;&lt;li&gt;802.11ac Wi-Fi &amp; Bluetooth 4.1&lt;/li&gt;&lt;li&gt;1080p HD video recording&lt;/li&gt;&lt;li&gt;8MP iSight &amp; FaceTime cameras&lt;/li&gt;&lt;/ul&gt;","thumbnailImage":"https://i5.walmartimages.com/asr/e93e052b-1d80-4f74-909a-84e6fcd70ba8_1.fa87a178f6e538a0d806393b35b7d31f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF","mediumImage":"https://i5.walmartimages.com/asr/e93e052b-1d80-4f74-909a-84e6fcd70ba8_1.fa87a178f6e538a0d806393b35b7d31f.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF","largeImage":"https://i5.walmartimages.com/asr/e93e052b-1d80-4f74-909a-84e6fcd70ba8_1.fa87a178f6e538a0d806393b35b7d31f.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF","productTrackingUrl":"http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=https%253A%252F%252Fwww.walmart.com%252Fip%252FApple-iPod-Touch-6th-Generation-32GB-Refurbished%252F54203936%253Faffp1%253DUuc9u1HTEjUuSuwCVkvfEOlqu9nWmcLs7BUZQ6bAlKg%2526affilsrc%253Dapi","standardShipRate":0.0,"marketplace":false,"modelNumber":"MKJ02LL/A","productUrl":"http://c.affil.walmart.com/t/api02?l=https%3A%2F%2Fwww.walmart.com%2Fip%2FApple-iPod-Touch-6th-Generation-32GB-Refurbished%2F54203936%3Faffp1%3DUuc9u1HTEjUuSuwCVkvfEOlqu9nWmcLs7BUZQ6bAlKg%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi","customerRating":"5.0","numReviews":2,"customerRatingImage":"http://i2.walmartimages.com/i/CustRating/5.gif","categoryNode":"3944_96469_1231508","rhid":"27423","bundle":false,"stock":"Not available","addToCartUrl":"http://c.affil.walmart.com/t/api02?l=http%3A%2F%2Faffil.walmart.com%2Fcart%2FaddToCart%3Fitems%3D54203936%7C1%26affp1%3DUuc9u1HTEjUuSuwCVkvfEOlqu9nWmcLs7BUZQ6bAlKg%26affilsrc%3Dapi%26veh%3Daff%26wmlspartner%3Dreadonlyapi","affiliateAddToCartUrl":"http://linksynergy.walmart.com/fs-bin/click?id=|LSNID|&offerid=223073.7200&type=14&catid=8&subid=0&hid=7200&tmpid=1082&RD_PARM1=http%253A%252F%252Faffil.walmart.com%252Fcart%252FaddToCart%253Fitems%253D54203936%257C1%2526affp1%253DUuc9u1HTEjUuSuwCVkvfEOlqu9nWmcLs7BUZQ6bAlKg%2526affilsrc%253Dapi","giftOptions":{"allowGiftWrap":false,"allowGiftMessage":false,"allowGiftReceipt":false},"imageEntities":[{"thumbnailImage":"https://i5.walmartimages.com/asr/164d724e-4481-4e24-a9f5-77d000f9ac69_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF","mediumImage":"https://i5.walmartimages.com/asr/164d724e-4481-4e24-a9f5-77d000f9ac69_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF","largeImage":"https://i5.walmartimages.com/asr/164d724e-4481-4e24-a9f5-77d000f9ac69_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF","entityType":"SECONDARY"},{"thumbnailImage":"https://i5.walmartimages.com/asr/5537d819-5634-4f04-8c71-9e5cf6a54e35_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF","mediumImage":"https://i5.walmartimages.com/asr/5537d819-5634-4f04-8c71-9e5cf6a54e35_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF","largeImage":"https://i5.walmartimages.com/asr/5537d819-5634-4f04-8c71-9e5cf6a54e35_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF","entityType":"SECONDARY"},{"thumbnailImage":"https://i5.walmartimages.com/asr/9fa924b6-a705-4b82-99cf-681af56fc686_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF","mediumImage":"https://i5.walmartimages.com/asr/9fa924b6-a705-4b82-99cf-681af56fc686_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF","largeImage":"https://i5.walmartimages.com/asr/9fa924b6-a705-4b82-99cf-681af56fc686_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF","entityType":"SECONDARY"},{"thumbnailImage":"https://i5.walmartimages.com/asr/2e763c3f-6cd4-47ae-be20-b44e8fe7941d_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF","mediumImage":"https://i5.walmartimages.com/asr/2e763c3f-6cd4-47ae-be20-b44e8fe7941d_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF","largeImage":"https://i5.walmartimages.com/asr/2e763c3f-6cd4-47ae-be20-b44e8fe7941d_1.d9a213b80a50b71ffcda24f12a89a29d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF","entityType":"SECONDARY"},{"thumbnailImage":"https://i5.walmartimages.com/asr/e93e052b-1d80-4f74-909a-84e6fcd70ba8_1.fa87a178f6e538a0d806393b35b7d31f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF","mediumImage":"https://i5.walmartimages.com/asr/e93e052b-1d80-4f74-909a-84e6fcd70ba8_1.fa87a178f6e538a0d806393b35b7d31f.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF","largeImage":"https://i5.walmartimages.com/asr/e93e052b-1d80-4f74-909a-84e6fcd70ba8_1.fa87a178f6e538a0d806393b35b7d31f.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF","entityType":"PRIMARY"}],"offerType":"ONLINE_ONLY","isTwoDayShippingEligible":false,"availableOnline":false}],"facets":[]}][headers: {Server=Mashery Proxy, Connection=keep-alive, Content-Length=6198, contentType=application/json;charset=utf-8, Date=1532195501000, citrus_message_id=b81b355d-af51-45b0-a1aa-7683ec70690f, citrus_message_timestamp=1532195503871, X-Mashery-Responder=prod-j-worker-tlsv1-us-west-1b-09.mashery.com, Content-Type=application/json; charset=utf-8, citrus_http_status_code=200, citrus_http_reason_phrase=OK, citrus_http_version=HTTP/1.1}]
+12:51:43,918 DEBUG TextMessageValidator| Control message:
+HTTPMESSAGE [id: 69d944ac-ff28-4201-bf12-177f8138f07c, payload: ][headers: {citrus_message_id=69d944ac-ff28-4201-bf12-177f8138f07c, citrus_message_timestamp=1532195502105, citrus_http_status_code=200, citrus_http_reason_phrase=OK, citrus_message_type=JSON}]
+12:51:43,918 DEBUG TextMessageValidator| Skip message payload validation as no control message was defined
+12:51:43,918 DEBUG ssageHeaderValidator| Start message header validation ...
+12:51:43,918 DEBUG faultHeaderValidator| Validating header element: citrus_http_status_code='200': OK.
+12:51:43,918 DEBUG faultHeaderValidator| Validating header element: citrus_http_reason_phrase='OK': OK.
+12:51:43,918 INFO  ssageHeaderValidator| Message header validation successful: All values OK
+12:51:43,918 INFO  port.LoggingReporter| 
+12:51:43,918 DEBUG port.LoggingReporter| TEST STEP 2/2 SUCCESS
+12:51:44,043 INFO  port.LoggingReporter| 
+12:51:44,043 INFO  port.LoggingReporter| TEST SUCCESS Waltmart_IT.testWaltmartJson (test)
+12:51:44,043 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:44,043 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:44,059 DEBUG port.LoggingReporter| AFTER TEST SUITE
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| AFTER TEST SUITE: SUCCESS
+12:51:44,059 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| CITRUS TEST RESULTS
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter|  Waltmart_IT.testWaltmartJson ................................... SUCCESS
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| TOTAL:	1
+12:51:44,059 DEBUG port.LoggingReporter| SKIPPED:	0 (0.0%)
+12:51:44,059 INFO  port.LoggingReporter| FAILED:	0 (0.0%)
+12:51:44,059 INFO  port.LoggingReporter| SUCCESS:	1 (100.0%)
+12:51:44,059 INFO  port.LoggingReporter| 
+12:51:44,059 INFO  port.LoggingReporter| ------------------------------------------------------------------------
+12:51:44,059 DEBUG  report.HtmlReporter| Generating HTML test report
+12:51:44,059 DEBUG       util.FileUtils| Reading file resource: 'test-detail.html' (encoding is 'windows-1252')
+12:51:44,074 DEBUG       util.FileUtils| Reading file resource: 'test-report.html' (encoding is 'windows-1252')
+12:51:44,090 INFO  ctOutputFileReporter| Generated test report: target\citrus-reports\citrus-test-results.html
+12:51:44,090 DEBUG report.JUnitReporter| Generating JUnit test report
+12:51:44,090 DEBUG       util.FileUtils| Reading file resource: 'junit-test.xml' (encoding is 'windows-1252')
+12:51:44,090 DEBUG       util.FileUtils| Reading file resource: 'junit-report.xml' (encoding is 'windows-1252')
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.5 s - in test.Waltmart_IT
+12:51:44,199 INFO  icApplicationContext| Closing org.springframework.context.support.GenericApplicationContext@12d3a4e9: startup date [Sat Jul 21 12:51:41 COT 2018]; root of context hierarchy
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.758 s
+[INFO] Finished at: 2018-07-21T12:51:44-05:00
+[INFO] Final Memory: 28M/981M
+[INFO] ------------------------------------------------------------------------
